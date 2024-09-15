@@ -1,6 +1,9 @@
-
+html{
+    scroll-behavior: smooth;
+}
 .header{
-    background-color: rgb(216, 163, 65);
+    background-color: rgb(206, 153, 55);
+    
     font-size: 100%;
     font-family: serif;    
     color: white;
@@ -30,7 +33,7 @@ a:hover{
     background-color: #645c5c3d;
     border-radius: 25%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 2px solid #ce1d1d;
+    border: 2px solid #6b881a;
 }
 .headpage a{
     font-size: 18px;
@@ -40,37 +43,66 @@ a:hover{
     color:rgb(253, 253, 253);
 }
 .header a:hover{
-    color: red;
+    color: #0E2636;
 }
 /*main page setting*/
 div{
-    
-    background-color:rgb(90, 84, 84);
+    background: #A26740;
+    background: #0E2636;
 }
-/* .bio{
-    border: 2px solid;
-    border-color: black;
-    padding: 10px;
-    background-color: grey;
-    transition: transform 0.4s ease; /* Smooth transition 
-   
-}*/ 
 
-
-/* .bio:hover{
-    background-color: lightcoral;      
-    transform: scale(1.1);
-}*/
-.mypic{
-    margin-left: 900px;
- 
-    display: flex;
-}
 
 .main{
-    margin-left: 50px;
-    color: white;
-    display: flex;
     
+   color:rgb(238, 212, 212);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5% 5%;
+    justify-content: space-between;
+   
+    
+}
+
+.bio{
+    display: flex;
+    flex-direction: row;  /* Align content and picture horizontally */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.mypic{
+    
+    flex: 0 0 270px;
+    margin-right: 1rem;
+  
+}
+.bio .contentbio{
+    flex: 1;              
+    min-width: 10%;     
+    padding-right: 18%;
+    text-align: justify;
+   
+}
+.logo{
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+    align-content: space-between;
+    line-height-step: 2px;
+}
+li{
+    margin-bottom: 1%;
+}
+button.top{
+   
+  position: absolute;
+  float: right;
+  -ms-flex-align: baseline;
+  margin-bottom:0;
+ right:5%;
+  bottom: 0;
+  display: none;
 }
 
