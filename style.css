@@ -1,0 +1,76 @@
+
+.header{
+    background-color: rgb(216, 163, 65);
+    font-size: 100%;
+    font-family: serif;    
+    color: white;
+    display:flex;
+    padding-left: 5%;
+}
+.headpage{
+    padding-left: 40rem ;
+    padding-top: 5%;
+    padding-bottom: 2%;
+   justify-content: row;
+   display: flex;
+  /* padding-top: 9rem;*/
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: white;
+    padding: 10px 20px; /* Add padding to make it button-like */
+    background-color: transparent; /* Default background */
+    border: 2px solid rgba(141, 133, 133, 0.63); /* Border to outline button */
+    border-radius: 25px; /* Make it look like a button */
+    transition: all 0.3s ease; /* Smooth transition for hover */
+
+}
+a:hover{
+    background-color: #645c5c3d;
+    border-radius: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ce1d1d;
+}
+.headpage a{
+    font-size: 18px;
+    display: flex;
+    margin: 0 10px;
+    text-decoration: none;
+    color:rgb(253, 253, 253);
+}
+.header a:hover{
+    color: red;
+}
+/*main page setting*/
+div{
+    
+    background-color:rgb(90, 84, 84);
+}
+/* .bio{
+    border: 2px solid;
+    border-color: black;
+    padding: 10px;
+    background-color: grey;
+    transition: transform 0.4s ease; /* Smooth transition 
+   
+}*/ 
+
+
+/* .bio:hover{
+    background-color: lightcoral;      
+    transform: scale(1.1);
+}*/
+.mypic{
+    margin-left: 900px;
+ 
+    display: flex;
+}
+
+.main{
+    margin-left: 50px;
+    color: white;
+    display: flex;
+    
+}
+
