@@ -45,7 +45,7 @@ export const Skills = () => {
                 {category.skills.map((skill, j) => (
                   <div key={j} className="flex items-center space-x-2">
                     <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${category.color}`}></div>
-                    <span className="text-gray-300 text-sm">{skill}</span>
+                    <span className="text-white text-sm">{skill}</span>
                   </div>
                 ))}
               </div>
