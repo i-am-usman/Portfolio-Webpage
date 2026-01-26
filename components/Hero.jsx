@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Sparkles, ChevronDown } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { heroConfig } from '../config/heroConfig';
 
 // ============================================
@@ -19,12 +19,28 @@ export const Hero = () => {
 
       <motion.div style={{ y }} className="relative z-10 text-center px-4">
         <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.5, type: 'spring' }}
-          className="mb-6"
+          initial={{ scale: 0, rotate: -180 }}
+          animate={{ scale: 1, rotate: 0 }}
+          transition={{ duration: 0.8, type: 'spring', bounce: 0.4 }}
+          className="mb-8"
         >
-          <Sparkles className="w-16 h-16 mx-auto text-purple-400 animate-pulse" />
+          <div className="relative w-40 h-40 md:w-48 md:h-48 mx-auto">
+            <div
+              className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-spin"
+              style={{ animationDuration: '3s' }}
+            ></div>
+            <div className="absolute inset-1 rounded-full bg-gray-900"></div>
+            <img
+              src={heroConfig.profileImage}
+              alt={heroConfig.name}
+              className="absolute inset-2 w-36 h-36 md:w-44 md:h-44 rounded-full object-cover border-4 border-gray-900"
+              onError={(e) => {
+                const target = e.currentTarget;
+                target.onerror = null;
+                target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(heroConfig.name)}&size=200&background=6366f1&color=fff&bold=true`;
+              }}
+            />
+          </div>
         </motion.div>
 
         <motion.h1
