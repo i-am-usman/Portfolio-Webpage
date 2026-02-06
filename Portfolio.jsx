@@ -11,7 +11,6 @@ import { LoadingScreen } from './components/LoadingScreen';
 
 // ============================================
 // MAIN APP COMPONENT
-// ============================================
 export default function Portfolio() {
   const [loading, setLoading] = useState(true);
 
